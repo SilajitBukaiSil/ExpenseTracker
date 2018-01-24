@@ -33,6 +33,8 @@ public class ExpensesAdapter extends ArrayAdapter<Expenses> {
         this.layoutRes = layoutRes;
         this.expensesList = expensesList;
         this.mDatabase = mDatabase;
+
+
     }
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = LayoutInflater.from(mCtx);
