@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textSize="@dimen/dimen_30"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="@string/edit_expenses_text"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+            <TextView
+                android:id="@+id/expenses_source_textview"
+                android:layout_width="wrap_content"
+                android:text="Select Expenses Source"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_20"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/edit_expenses_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/expenses_list"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:background="@drawable/shape_edittext"
+                android:theme="@style/SpinnerTheme"/>
+
+            <EditText
+                android:id="@+id/editTextExpenses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:textColor="@color/colorPrimary"
+                android:imeOptions="actionNext"
+                android:text="45200"
+                android:textColorHint="@color/colorPrimary"
+                android:hint="@string/enter_amount_text"
+                android:background="@drawable/shape_edittext"
+                android:inputType="number" />
+            <Button
+                android:id="@+id/buttonUpdateExpenses"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_height="wrap_content"
+                android:text="@string/update_text"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/shape_edittext"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

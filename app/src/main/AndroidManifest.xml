@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="silajit.com.expensetracker">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_expense_tracker_image"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_expense_tracker_image"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="silajit.com.expensetracker.SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="silajit.com.expensetracker.LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="silajit.com.expensetracker.IncomeActivity"
+            android:label="@string/income_text"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="silajit.com.expensetracker.SavingsActivity"
+            android:label="@string/savings_text" />
+        <activity
+            android:name="silajit.com.expensetracker.InvestmentNewsActivity"
+            android:label="@string/investment_news_text" />
+        <activity
+            android:name="silajit.com.expensetracker.RegistrationActivity"
+            android:label="@string/register_your_details_text" />
+        <activity
+            android:name="silajit.com.expensetracker.HelpActivity"
+            android:label="@string/help_text" />
+        <activity
+            android:name="silajit.com.expensetracker.SignInActivity"
+            android:label="@string/sign_in_string"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="silajit.com.expensetracker.LoginActivity"/>
+        </activity>
+        <activity
+            android:name="silajit.com.expensetracker.DefaultIntro"
+            android:label="@string/title_activity_default_intro"
+            android:theme="@style/FullscreenTheme" />
+
+        <activity
+            android:name="silajit.com.expensetracker.AudioRecorderActivity"
+            android:label="@string/audio_recorder_string" />
+        <activity
+            android:name="silajit.com.expensetracker.RecordingListActivity"
+            android:label="@string/recorded_list_string" />
+        <activity
+            android:name="silajit.com.expensetracker.ForgetPasswordActivity"
+            android:label="@string/users_list_text" />
+        <activity
+            android:name="silajit.com.expensetracker.IncomeDisplayDetails"
+            android:label="@string/income_source_details_text" />
+        <activity android:name="silajit.com.expensetracker.QRCodeScannerActivity"
+            android:label="@string/qr_code_text" />
+        <activity android:name="silajit.com.expensetracker.ExpensesActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name="silajit.com.expensetracker.DisplayExpensesDetailsActivity"
+            android:label="@string/expense_source_details_text"/>
+
+
+    </application>
+
+</manifest>

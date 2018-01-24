@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="silajit.com.expensetracker.SignInActivity"
+    tools:showIn="@layout/app_bar_sign_in">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_20"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/sign_in_textview"
+            android:layout_width="match_parent"
+            android:text="@string/welcome_text"
+            android:textSize="@dimen/dimen_25"
+            android:textAlignment="center"
+            android:textColor="@color/colorMediumBlue"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/income_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/income_text"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@color/colorMediumBlue"
+            android:layout_below="@id/sign_in_textview"/>
+        <Button
+            android:id="@+id/expense_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/expenses_text"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorMediumBlue"
+            android:layout_below="@id/income_button"/>
+        <Button
+            android:id="@+id/report_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/savings_text"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorMediumBlue"
+            android:layout_below="@id/expense_button"/>
+        <Button
+            android:id="@+id/investment_news_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/investment_news_text"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorMediumBlue"
+            android:layout_below="@id/report_button"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

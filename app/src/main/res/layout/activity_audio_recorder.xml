@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="silajit.com.expensetracker.AudioRecorderActivity">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRecorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen_20">
+        <Chronometer
+            android:id="@+id/chronometerTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_60"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dimen_10"
+            android:paddingEnd="@dimen/dimen_10"
+            android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:tint="@android:color/darker_gray"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_10">
+            <ImageView
+                android:id="@+id/imageViewRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_microphone"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <ImageView
+                android:id="@+id/imageViewStop"
+                android:layout_width="@dimen/dimen_42"
+                android:layout_height="@dimen/dimen_42"
+                android:src="@drawable/ic_stop"
+                android:tint="@android:color/darker_gray"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:clickable="true"
+                android:focusable="true"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

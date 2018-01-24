@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/dimen_10"
+    tools:context="silajit.com.expensetracker.IncomeActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/fab_margin">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textSize="@dimen/dimen_30"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="@string/add_all_income_source_here_text"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+            <TextView
+                android:id="@+id/income_source_textview"
+                android:layout_width="wrap_content"
+                android:text="@string/select_incoome_source_text"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_20"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spinnerIncomeSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/SpinnerTheme"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:background="@drawable/shape_edittext"
+                android:entries="@array/source" />
+
+            <EditText
+                android:id="@+id/editTextIncome_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:textColor="@color/colorPrimary"
+                android:imeOptions="actionNext"
+                android:hint="@string/enter_amount_text"
+                android:textColorHint="@color/colorPrimary"
+                android:background="@drawable/shape_edittext"
+                android:inputType="number" />
+            <Button
+                android:id="@+id/buttonAddIncome"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_height="wrap_content"
+                android:text="@string/add_income_text"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/shape_edittext"/>
+
+            <Button
+                android:id="@+id/buttonViewAllIncomes"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all_incomes_text"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/shape_edittext"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
